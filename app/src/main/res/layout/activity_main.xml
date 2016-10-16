@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!-- android:background="@color/category_numbers" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_numbers">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_numbers" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_family">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_family" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/colours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_colors">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_colors" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_phrases">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_phrases" />
+    </FrameLayout>
+
+</LinearLayout>
