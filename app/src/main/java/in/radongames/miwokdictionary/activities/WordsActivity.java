@@ -2,7 +2,9 @@ package in.radongames.miwokdictionary.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import in.radongames.miwokdictionary.MiwokApplication;
@@ -19,6 +21,7 @@ public class WordsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.words_list);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
         int vId = intent.getIntExtra("EXTRA_CALLING_VIEW", R.id.numbers);
@@ -40,5 +43,16 @@ public class WordsActivity extends AppCompatActivity {
         if (sm != null) {
             sm.stopSpeaking();
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                NavUtils.navigateUpFromSameTask(this);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
