@@ -64,4 +64,8 @@ public enum WordsListType {
         }
         return null;
     }
+
+    public static int getNumListTypes() {
+        return WordsListType.values().length;
+    }
 }
