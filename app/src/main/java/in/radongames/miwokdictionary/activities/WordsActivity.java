@@ -1,6 +1,7 @@
 package in.radongames.miwokdictionary.activities;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -18,5 +19,8 @@ public class WordsActivity extends AppCompatActivity /*implements WordsFragment.
         ViewPager vp = (ViewPager) findViewById(R.id.words_fragment_container);
         PagerAdapter wpa = new WordsPagerAdapter(getSupportFragmentManager());
         vp.setAdapter(wpa);
+
+        TabLayout tl = (TabLayout) findViewById(R.id.words_fragment_tablayout);
+        tl.setupWithViewPager(vp);
     }
 }

@@ -22,6 +22,9 @@
     <color name="category_phrases">#16AFCA</color>
 
     <!-- Font colour for each category name -->
-    <color name="category_text_colour">#ffffff</color>
-    
+    <color name="category_text">#ffffff</color>
+
+    <!-- Font colour for tab that is not selected -->
+    <color name="unselected_tab_text">#A8A19E</color>
+
 </resources>
