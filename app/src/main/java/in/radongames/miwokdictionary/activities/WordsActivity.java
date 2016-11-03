@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import in.radongames.miwokdictionary.R;
 import in.radongames.miwokdictionary.fragments.WordsFragment;
 
-public class WordsActivity extends AppCompatActivity implements WordsFragment.OnFragmentInteractionListener {
+public class WordsActivity extends AppCompatActivity /*implements WordsFragment.OnFragmentInteractionListener*/ {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,8 +58,8 @@ public class WordsActivity extends AppCompatActivity implements WordsFragment.On
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri) {
-        // do Nothing, for now.
-    }
+//    @Override
+//    public void onFragmentInteraction(Uri uri) {
+//        // do Nothing, for now.
+//    }
 }
