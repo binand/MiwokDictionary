@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.util.Log;
 
 import in.radongames.miwokdictionary.data.WordsListType;
 import in.radongames.miwokdictionary.utils.MiwokAppConstants;

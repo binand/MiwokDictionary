@@ -8,10 +8,10 @@ import in.radongames.miwokdictionary.R;
 
 public enum WordsListType {
 
-        WORDS_NUMBERS(R.id.numbers, "Numbers", 1, true, R.color.category_numbers),
-        WORDS_FAMILY(R.id.family, "Family", 2, true, R.color.category_family),
-        WORDS_COLOURS(R.id.colours, "Colours", 3, true, R.color.category_colors),
-        WORDS_PHRASES(R.id.phrases, "Phrases", 4, false, R.color.category_phrases);
+        WORDS_NUMBERS(R.id.numbers, "Numbers", 0, true, R.color.category_numbers),
+        WORDS_FAMILY(R.id.family, "Family", 1, true, R.color.category_family),
+        WORDS_COLOURS(R.id.colours, "Colours", 2, true, R.color.category_colors),
+        WORDS_PHRASES(R.id.phrases, "Phrases", 3, false, R.color.category_phrases);
 
     private int vId;
     private String typeName;
