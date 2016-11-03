@@ -10,7 +10,7 @@ import android.widget.ListView;
 
 import in.radongames.miwokdictionary.MiwokApplication;
 import in.radongames.miwokdictionary.R;
-import in.radongames.miwokdictionary.data.WordAdapter;
+import in.radongames.miwokdictionary.adapters.WordAdapter;
 import in.radongames.miwokdictionary.data.WordsList;
 import in.radongames.miwokdictionary.data.WordsListType;
 import in.radongames.miwokdictionary.listeners.WordOnClickListener;

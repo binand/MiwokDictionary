@@ -1,4 +1,4 @@
-package in.radongames.miwokdictionary.data;
+package in.radongames.miwokdictionary.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import in.radongames.miwokdictionary.R;
+import in.radongames.miwokdictionary.data.Word;
 
 /**
  * Created by Binand on 02-10-2016.

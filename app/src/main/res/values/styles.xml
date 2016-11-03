@@ -40,7 +40,6 @@
 
     <style name="TabLayoutText" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/unselected_tab_text</item>
         <item name="textAllCaps">true</item>
     </style>
 

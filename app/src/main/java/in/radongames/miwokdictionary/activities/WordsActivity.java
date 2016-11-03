@@ -7,7 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import in.radongames.miwokdictionary.R;
-import in.radongames.miwokdictionary.fragments.WordsPagerAdapter;
+import in.radongames.miwokdictionary.adapters.WordsPagerAdapter;
 
 public class WordsActivity extends AppCompatActivity /*implements WordsFragment.OnFragmentInteractionListener*/ {
 
