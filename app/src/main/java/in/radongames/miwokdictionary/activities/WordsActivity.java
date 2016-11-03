@@ -16,7 +16,7 @@ public class WordsActivity extends AppCompatActivity implements WordsFragment.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.words_container);
+        setContentView(R.layout.activity_words);
 
         // From: http://stackoverflow.com/questions/28002209/android-getactionbar-vs-getsupportactionbar
         // If you are using AppCompat you always have to call getSupportActionBar() no matter which Android Version your App is running.
@@ -24,7 +24,7 @@ public class WordsActivity extends AppCompatActivity implements WordsFragment.On
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.layout_container, new WordsFragment())
+                .replace(R.id.words_fragment_container, new WordsFragment())
                 .commit();
     }
 

@@ -36,7 +36,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         View itemView = convertView;
 
         if (itemView == null) {
-            itemView = LayoutInflater.from(ctx).inflate(R.layout.list_item, parent, false);
+            itemView = LayoutInflater.from(ctx).inflate(R.layout.words_listitem, parent, false);
         }
 
         itemView.setBackgroundResource(itemColour);

@@ -77,7 +77,7 @@ public class WordsFragment extends Fragment {
 
         Activity parentActivity = getActivity();
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.words_list, container, false);
+        View v = inflater.inflate(R.layout.fragment_words, container, false);
 
         Intent intent = parentActivity.getIntent();
         int vId = intent.getIntExtra(MiwokAppConstants.getExtraCallingView(), R.id.numbers);
@@ -85,7 +85,7 @@ public class WordsFragment extends Fragment {
         WordsListType wt = WordsListType.getTypeFromViewId(vId);
         WordAdapter wordAdapter = new WordAdapter(parentActivity, WordsList.getWordsList(wt), wt.getBgColourId(), wt.hasImage());
 
-        ListView lv = (ListView) v.findViewById(R.id.list);
+        ListView lv = (ListView) v.findViewById(R.id.words_list);
         lv.setOnItemClickListener(new WordOnClickListener(parentActivity));
         lv.setAdapter(wordAdapter);
 
