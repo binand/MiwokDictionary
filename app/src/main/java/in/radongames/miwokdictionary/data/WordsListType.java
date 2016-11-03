@@ -7,17 +7,22 @@ import in.radongames.miwokdictionary.R;
  */
 
 public enum WordsListType {
-        WORDS_NUMBERS(R.id.numbers, true, R.color.category_numbers),
-        WORDS_FAMILY(R.id.family, true, R.color.category_family),
-        WORDS_COLOURS(R.id.colours, true, R.color.category_colors),
-        WORDS_PHRASES(R.id.phrases, false, R.color.category_phrases);
+
+        WORDS_NUMBERS(R.id.numbers, "Numbers", 1, true, R.color.category_numbers),
+        WORDS_FAMILY(R.id.family, "Family", 2, true, R.color.category_family),
+        WORDS_COLOURS(R.id.colours, "Colours", 3, true, R.color.category_colors),
+        WORDS_PHRASES(R.id.phrases, "Phrases", 4, false, R.color.category_phrases);
 
     private int vId;
+    private String typeName;
+    private int position;
     private boolean hasImage;
     private int bgColour;
 
-    WordsListType(int vId, boolean hasImage, int bgColour) {
+    WordsListType(int vId, String typeName, int position, boolean hasImage, int bgColour) {
         this.vId = vId;
+        this.typeName = typeName;
+        this.position = position;
         this.hasImage = hasImage;
         this.bgColour = bgColour;
     }
@@ -34,9 +39,26 @@ public enum WordsListType {
         return bgColour;
     }
 
+    public String getName() {
+        return typeName;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
     public static WordsListType getTypeFromViewId(int vId) {
         for (WordsListType w : WordsListType.values()) {
             if (w.getViewId() == vId) {
+                return w;
+            }
+        }
+        return null;
+    }
+
+    public static WordsListType getTypeFromPosition(int pos) {
+        for (WordsListType w : WordsListType.values()) {
+            if (w.getPosition() == pos) {
                 return w;
             }
         }
