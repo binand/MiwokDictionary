@@ -14,6 +14,7 @@ import in.radongames.miwokdictionary.data.WordAdapter;
 import in.radongames.miwokdictionary.data.WordsList;
 import in.radongames.miwokdictionary.data.WordsListType;
 import in.radongames.miwokdictionary.listeners.WordOnClickListener;
+import in.radongames.miwokdictionary.utils.MiwokAppConstants;
 import in.radongames.miwokdictionary.utils.SpokenMiwok;
 
 public class WordsActivity extends AppCompatActivity {
@@ -29,7 +30,7 @@ public class WordsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
-        int vId = intent.getIntExtra("EXTRA_CALLING_VIEW", R.id.numbers);
+        int vId = intent.getIntExtra(MiwokAppConstants.getExtraCallingView(), R.id.numbers);
 
         WordsListType wt = WordsListType.getTypeFromViewId(vId);
         WordAdapter wordAdapter = new WordAdapter(this, WordsList.getWordsList(wt), wt.getBgColourId(), wt.hasImage());

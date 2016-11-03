@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
+import in.radongames.miwokdictionary.utils.MiwokAppConstants;
+
 /**
  * Created by Binand on 02-10-2016.
  */
@@ -12,7 +14,6 @@ public class MainOnClickListener implements View.OnClickListener {
 
     private Context ctx;
     private Class next;
-    private static final String EXTRA_CALLING_VIEW = "EXTRA_CALLING_VIEW";
 
     public MainOnClickListener(Context ctx, Class next) {
 
@@ -24,7 +25,7 @@ public class MainOnClickListener implements View.OnClickListener {
 
         int vId = v.getId();
         Intent intent = new Intent(ctx, next);
-        intent.putExtra(EXTRA_CALLING_VIEW, vId);
+        intent.putExtra(MiwokAppConstants.getExtraCallingView(), vId);
         ctx.startActivity(intent);
     }
 }
