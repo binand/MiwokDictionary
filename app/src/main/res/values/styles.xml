@@ -32,8 +32,6 @@
     <!-- Style for the top tab bar -->
     <style name="TabLayoutStyle" parent="Widget.Design.TabLayout">
         <item name="tabTextAppearance">@style/TabLayoutText</item>
-        <item name="tabIndicatorColor">@android:color/white</item>
-        <item name="tabSelectedTextColor">@android:color/white</item>
         <item name="tabTextColor">@color/unselected_tab_text</item>
         <item name="android:background">@color/colorPrimary</item>
     </style>
