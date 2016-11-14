@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,7 +9,10 @@
         android:id="@+id/words_fragment_tablayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/TabLayoutStyle" />
+        android:theme="@style/TabLayoutStyle"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabIndicatorHeight="4dp"
+        app:tabTextColor="@android:color/white" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/words_fragment_container"
